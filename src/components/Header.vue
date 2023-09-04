@@ -1,6 +1,8 @@
 ﻿<template>
     <header class="header">
-        <div class="logo">TopUKSchool</div>
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Logo">
+        </div>
         <nav>
             <ul>
                 <li><router-link to="/">首页</router-link></li>
@@ -62,23 +64,16 @@
 </script>
 
 <style>
-    /* 样式可以根据需要自行调整 */
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* 设置左右列的比例为1:3 */
+        grid-gap: 10px;
+        height: auto;
         background-color: #f5f5f5;
-    }
-
-    .logo {
-        margin-left: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        flex-grow: 1;
+        align-items: center;
     }
 
     nav {
-        flex-grow: 3;
         font-size: 15px;
     }
 
