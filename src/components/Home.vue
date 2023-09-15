@@ -54,7 +54,17 @@
 
         <section class="section4">
             <h2>师资一览</h2>
-            <p>这里是师资一览的内容</p>
+                <Carousel :autoplay="2000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
+                    <Slide v-for="slide in 10" :key="slide">
+                        <div class="carousel__item">
+                            <img src="../images/study.jpg" alt="图片1" width:100px>
+                        </div>
+                    </Slide>
+
+                    <template #addons>
+                        <Pagination />
+                    </template>
+                </Carousel>
         </section>
 
         <section class="section5">
@@ -69,13 +79,19 @@
 <script>
     import Header from './Header.vue';
     import Footer from './Footer.vue';
+    import { Carousel, Pagination, Slide } from 'vue3-carousel'
+
+    import 'vue3-carousel/dist/carousel.css'
 
     export default {
         components: {
             Header,
-            Footer
+            Footer,
+            Carousel,
+            Slide,
+            Pagination,
         },
-    }
+    };
 </script>
 
 <style>
@@ -88,7 +104,7 @@
         width: auto;
         height: 400px;
         text-align: left;
-        line-height:50px;
+        line-height: 50px;
         background-image: url('../images/home1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -130,12 +146,48 @@
         background-color: #efefef; /* 设置第一个section的背景颜色为红色 */
     }
 
+        .carousel__slide {
+            padding: 1px;
+        }
+
+        .carousel__viewport {
+            perspective: 200px;
+        }
+
+        .carousel__track {
+            transform-style: preserve-3d;
+        }
+
+        .carousel__slide--sliding {
+            transition: 0.5s;
+        }
+
+        .carousel__slide {
+            opacity: 0.9;
+            transform: rotateY(-10deg) scale(0.9);
+        }
+
+        .carousel__slide--active ~ .carousel__slide {
+            transform: rotateY(10deg) scale(0.9);
+        }
+
+        .carousel__slide--prev {
+            opacity: 1;
+            transform: rotateY(-10deg) scale(0.95);
+        }
+
+        .carousel__slide--next {
+            opacity: 1;
+            transform: rotateY(10deg) scale(0.95);
+        }
+
+        .carousel__slide--active {
+            opacity: 1;
+            transform: rotateY(0) scale(1.1);
+        }
+    
+
     .section5 {
         background-color: #ccdff2; /* 设置第一个section的背景颜色为红色 */
     }
-
-    
-
-    
-
 </style>
