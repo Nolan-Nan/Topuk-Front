@@ -46,7 +46,6 @@
                 </div>
             </div>
         </section>
-
         <section class="section3">
             <h2>留学成功案例</h2>
             <p>这里是成功案例的内容</p>
@@ -57,7 +56,7 @@
                 <Carousel :autoplay="2000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
                     <Slide v-for="slide in 10" :key="slide">
                         <div class="carousel__item">
-                            <img src="../images/study.jpg" alt="图片1" width:100px>
+                            <img src="../images/study.jpg" alt="图片1">
                         </div>
                     </Slide>
 
@@ -147,11 +146,12 @@
     }
 
         .carousel__slide {
-            padding: 1px;
+            padding: 5px;
         }
 
         .carousel__viewport {
-            perspective: 200px;
+            perspective: 2000px;
+            height: 300px;
         }
 
         .carousel__track {
@@ -164,11 +164,11 @@
 
         .carousel__slide {
             opacity: 0.9;
-            transform: rotateY(-10deg) scale(0.9);
+            transform: rotateY(-20deg) scale(0.9);
         }
 
         .carousel__slide--active ~ .carousel__slide {
-            transform: rotateY(10deg) scale(0.9);
+            transform: rotateY(20deg) scale(0.9);
         }
 
         .carousel__slide--prev {
@@ -178,16 +178,16 @@
 
         .carousel__slide--next {
             opacity: 1;
-            transform: rotateY(10deg) scale(0.95);
+            transform: rotateY(10deg) scale(1.0);
         }
 
         .carousel__slide--active {
             opacity: 1;
-            transform: rotateY(0) scale(1.1);
+            transform: rotateY(0) scale(1.5);
         }
     
 
     .section5 {
-        background-color: #ccdff2; /* 设置第一个section的背景颜色为红色 */
+        background-color: #ccdff2;
     }
 </style>

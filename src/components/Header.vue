@@ -34,7 +34,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">私立学校</a></li>
+                <li><router-link to="/category">私立学校</router-link></li>
             </ul>
         </nav>
     </header>
