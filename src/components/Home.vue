@@ -76,7 +76,8 @@
             <h2>夏令营 · 住宿家庭 Video</h2>
             <p>这里是活动视频的内容</p>
         </section>
-
+        
+        <FAQSection />
         <Footer />
         <Window />
         <SuspenPopup />
@@ -89,6 +90,7 @@
     import Footer from './Footer.vue';
     import Window from './Window.vue';
     import SuspenPopup from './suspenPopup.vue';
+    import FAQSection from './FAQSection.vue';
     import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
     import 'vue3-carousel/dist/carousel.css'
@@ -97,6 +99,7 @@
         components: {
             SuspenPopup,
             Header,
+            FAQSection,
             Footer,
             Window,
             Carousel,
