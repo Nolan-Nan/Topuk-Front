@@ -69,13 +69,12 @@
         grid-template-columns: 1fr 3fr; /* 设置左右列的比例为1:3 */
         grid-gap: 50px;
         height: auto;
-        background-color: #f5f5f5;
         align-items: center;
     }
 
     nav {
         font-size: 30px;
-        margin-left: 100px;
+        margin-left: 180px;
     }
 
         nav > ul {
@@ -93,7 +92,7 @@
 
                 nav > ul li a {
                     text-decoration: none;
-                    color: #333;
+                    color: white;
                 }
 
     .has-dropdown:hover .dropdown {

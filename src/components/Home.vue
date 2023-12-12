@@ -2,10 +2,11 @@
     <div class="home">
         <Header />
         <section class="section1">
-            <h1> - </h1>
-            <h1>最专业团队，最顶尖的老师</h1>
-            <h3>专注留学生学术辅导10年：</h3>
-            <h3>全学科，全阶段，全方位</h3>
+            <div class="centered-content">
+                <h1>最专业团队，最顶尖的老师</h1>
+                <h3>专注留学生学术辅导10年：</h3>
+                <h3>全学科，全阶段，全方位</h3>
+            </div>
         </section>
         <section class="section2">
             <h2>产品简介</h2>
@@ -113,14 +114,30 @@
 
     .section1 {
         width: auto;
-        height: 400px;
-        text-align: left;
-        line-height: 50px;
-        background-image: url('../images/HomeBack.jpg');
+        height: 800px;
+        text-align: left; /* 水平居中 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 垂直居中 */
+        background-image: url('../images/HomeBack.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        margin-top: -150px;
     }
+
+        .section1 h1, .section1 h3 {
+            color: white; /* 设置文本颜色为白色 */
+            margin-left: 100px; /* 清除默认的外边距 */
+        }
+
+        .section1 h1{
+            font-size: 4.5rem;
+        }
+
+        .section1 h3 {
+            font-size: 2rem;
+        }
 
     .section2 {
         background-color: white; /* 设置第二个section的背景颜色为绿色 */
