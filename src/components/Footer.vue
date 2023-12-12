@@ -8,11 +8,11 @@
             <ul class="footer-links">
               <li><a href="#">首页</a></li>
               <li><router-link to="/study-abroad">留学</router-link></li>
-              <li><a href="#">国际课程</a></li>
+              <li><router-link to="/international-curriculum">国际课程</router-link></li>
             </ul>
             <ul class="footer-links">
                 <li><router-link to="/summer-camp">夏令营</router-link></li>
-              <li><a href="#">监护</a></li>
+                <li><router-link to="/guardianship">监护</router-link></li>
               <li><a href="#">私立学校</a></li>
             </ul>
           </div>

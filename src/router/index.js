@@ -3,6 +3,8 @@ import Home from '../components/Home.vue';
 import Category from '../components/Category.vue';
 import StudyAbroad from '../components/StudyAbroad.vue'; 
 import SummerCamp from '../components/SummerCamp.vue'; 
+import Guardianship from '../components/Guardianship.vue';
+import InternationalCurriculum from '../components/InternationalCurriculum.vue';
 
 
 const routes = [
@@ -25,6 +27,16 @@ const routes = [
         path: '/summer-camp', // Add a new route for the "夏令营" page
         name: 'SummerCamp',
         component: SummerCamp,
+    },
+    {
+        path: '/guardianship', // Add a new route for the "监护" page
+        name: 'Guardianship',
+        component: Guardianship,
+    },
+    {
+        path: '/international-curriculum', // Add a new route for the "国际课程" page
+        name: 'InternationalCurriculum',
+        component: InternationalCurriculum,
     },
 ]
 
