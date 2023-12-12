@@ -13,7 +13,7 @@
             <ul class="footer-links">
                 <li><router-link to="/summer-camp">夏令营</router-link></li>
                 <li><router-link to="/guardianship">监护</router-link></li>
-              <li><a href="#">私立学校</a></li>
+                <li><router-link to="/private-schools">私立学校</router-link></li>
             </ul>
           </div>
         </div>

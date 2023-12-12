@@ -5,7 +5,7 @@ import StudyAbroad from '../components/StudyAbroad.vue';
 import SummerCamp from '../components/SummerCamp.vue'; 
 import Guardianship from '../components/Guardianship.vue';
 import InternationalCurriculum from '../components/InternationalCurriculum.vue';
-
+import PrivateSchools from '../components/PrivateSchools.vue';
 
 const routes = [
     {
@@ -38,6 +38,12 @@ const routes = [
         name: 'InternationalCurriculum',
         component: InternationalCurriculum,
     },
+    {
+        path: '/private-schools', // Add a new route for the "私立学校" page
+        name: 'PrivateSchools',
+        component: PrivateSchools,
+    },
+    
 ]
 
 const router = createRouter({
