@@ -55,11 +55,12 @@
             <img src="../images/offer/IC.png" alt="图片1">
             <img src="../images/offer/UCL-banking.png" alt="图片1">
             <img src="../images/offer/Sheffield-LLM.png" alt="图片1">
+            
         </section>
 
         <section class="section4">
             <h2>师资一览</h2>
-                <Carousel :autoplay="2000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
+                <Carousel :autoplay="5000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
                     <Slide v-for="slide in 10" :key="slide">
                         <div class="carousel__item">
                             <img src="../images/study.jpg" alt="图片1" class="carousel__image">
@@ -67,6 +68,7 @@
                     </Slide>
 
                     <template #addons>
+                        <Navigation />
                         <Pagination />
                     </template>
                 </Carousel>
@@ -91,7 +93,7 @@
     import Window from './Window.vue';
     import SuspenPopup from './suspenPopup.vue';
     import FAQSection from './FAQSection.vue';
-    import { Carousel, Pagination, Slide } from 'vue3-carousel'
+    import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
     import 'vue3-carousel/dist/carousel.css'
 
@@ -105,6 +107,7 @@
             Carousel,
             Slide,
             Pagination,
+            Navigation,
         },
     };
 </script>
@@ -182,49 +185,31 @@
         }
 
     .section4 {
-        background-color: #efefef; /* 设置第一个section的背景颜色为红色 */
+        background-color: #efefef; 
     }
 
-
-    .carousel__slide {
-        padding: 5px;
-    }
-
-    .carousel__viewport {
-        perspective: 2000px;
-    }
-
-    .carousel__track {
-        transform-style: preserve-3d;
-    }
-
-    .carousel__slide--sliding {
-        transition: 0.5s;
+    .carousel__item {
+        min-height: 200px;
+        width: 100%;
+        background-color: var(--vc-clr-primary);
+        color: var(--vc-clr-white);
+        font-size: 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .carousel__slide {
-        opacity: 0.9;
-        transform: rotateY(-20deg) scale(0.9);
+        padding: 10px;
     }
 
-    .carousel__slide--active ~ .carousel__slide {
-        transform: rotateY(20deg) scale(0.9);
+    .carousel__prev,
+    .carousel__next {
+        box-sizing: content-box;
+        border: 5px solid white;
     }
-
-    .carousel__slide--prev {
-        opacity: 1;
-        transform: rotateY(-10deg) scale(0.95);
-    }
-
-    .carousel__slide--next {
-        opacity: 1;
-        transform: rotateY(10deg) scale(0.95);
-    }
-
-    .carousel__slide--active {
-        opacity: 1;
-        transform: rotateY(0) scale(1.1);
-    }
+    
     
 
     .section5 {
