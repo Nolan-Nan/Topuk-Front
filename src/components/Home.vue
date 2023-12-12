@@ -116,7 +116,7 @@
         height: 400px;
         text-align: left;
         line-height: 50px;
-        background-image: url('../images/home1.jpg');
+        background-image: url('../images/HomeBack.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
