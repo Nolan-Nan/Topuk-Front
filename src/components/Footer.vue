@@ -21,7 +21,7 @@ export default {
         font-size: 16px;
     }
 
-    ,footer h1{
+    footer h1{
         color: white;
     }
 
