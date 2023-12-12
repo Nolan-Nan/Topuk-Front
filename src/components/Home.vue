@@ -84,7 +84,7 @@
 </template>
 
 <script>
-    import Header from './NewHeader.vue';
+    import Header from './Header.vue';
     import Footer from './Footer.vue';
     import Window from './Window.vue';
     import SuspenPopup from './suspenPopup.vue';
