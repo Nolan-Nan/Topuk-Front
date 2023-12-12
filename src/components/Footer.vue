@@ -11,7 +11,7 @@
               <li><a href="#">国际课程</a></li>
             </ul>
             <ul class="footer-links">
-              <li><a href="#">夏令营</a></li>
+                <li><router-link to="/summer-camp">夏令营</router-link></li>
               <li><a href="#">监护</a></li>
               <li><a href="#">私立学校</a></li>
             </ul>

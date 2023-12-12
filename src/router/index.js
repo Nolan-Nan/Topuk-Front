@@ -1,7 +1,9 @@
 ﻿import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue';
 import Category from '../components/Category.vue';
-import StudyAbroad from '../components/StudyAbroad.vue'; // Import the new component
+import StudyAbroad from '../components/StudyAbroad.vue'; 
+import SummerCamp from '../components/SummerCamp.vue'; 
+
 
 const routes = [
     {
@@ -19,7 +21,11 @@ const routes = [
         name: 'StudyAbroad',
         component: StudyAbroad,
     },
-    // ... other routes
+    {
+        path: '/summer-camp', // Add a new route for the "夏令营" page
+        name: 'SummerCamp',
+        component: SummerCamp,
+    },
 ]
 
 const router = createRouter({
