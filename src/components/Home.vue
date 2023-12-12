@@ -128,7 +128,8 @@
 
         .section1 h1, .section1 h3 {
             color: white; /* 设置文本颜色为白色 */
-            margin-left: 100px; /* 清除默认的外边距 */
+            margin-left: 100px; 
+
         }
 
         .section1 h1{
@@ -182,51 +183,45 @@
     }
 
 
-        .carousel__slide {
-            padding: 1px;
-        }
+    .carousel__slide {
+        padding: 5px;
+    }
 
-        .carousel__viewport {
-            perspective: 2340px;
-            height: 176px;
-        }
+    .carousel__viewport {
+        perspective: 2000px;
+    }
 
-        .carousel__track {
-            transform-style: preserve-3d;
-        }
+    .carousel__track {
+        transform-style: preserve-3d;
+    }
 
-        .carousel__slide--sliding {
-            transition: 0.5s;
-        }
+    .carousel__slide--sliding {
+        transition: 0.5s;
+    }
 
-        .carousel__slide {
-            opacity: 0.9;
-            transform: rotateY(-10deg) scale(0.9);
-        }
+    .carousel__slide {
+        opacity: 0.9;
+        transform: rotateY(-20deg) scale(0.9);
+    }
 
-        .carousel__slide--active ~ .carousel__slide {
-            transform: rotateY(10deg) scale(0.9);
-        }
+    .carousel__slide--active ~ .carousel__slide {
+        transform: rotateY(20deg) scale(0.9);
+    }
 
-        .carousel__slide--prev {
-            opacity: 1;
-            transform: rotateY(-10deg) scale(0.95);
-        }
+    .carousel__slide--prev {
+        opacity: 1;
+        transform: rotateY(-10deg) scale(0.95);
+    }
 
-        .carousel__slide--next {
-            opacity: 1;
-            transform: rotateY(10deg) scale(0.95);
-        }
+    .carousel__slide--next {
+        opacity: 1;
+        transform: rotateY(10deg) scale(0.95);
+    }
 
-        .carousel__slide--active {
-            opacity: 1;
-            transform: rotateY(0) scale(1.1);
-        }
-
-        .carousel__image {
-            width: 234px; /* 设置宽度 */
-            height: 176px; /* 设置高度 */
-        }
+    .carousel__slide--active {
+        opacity: 1;
+        transform: rotateY(0) scale(1.1);
+    }
     
 
     .section5 {
