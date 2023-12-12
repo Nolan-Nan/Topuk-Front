@@ -20,7 +20,7 @@
       关闭
     </div>
     <a
-      href="http://xxxxxx" target="_blank"
+      target="_blank"
     ><img src="../images/wechat.jpg" width="320" border="0" /></a>
   </div>
 </template>
