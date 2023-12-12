@@ -7,7 +7,7 @@
           <div class="links-container">
             <ul class="footer-links">
               <li><a href="#">首页</a></li>
-              <li><a href="#">留学</a></li>
+              <li><router-link to="/study-abroad">留学</router-link></li>
               <li><a href="#">国际课程</a></li>
             </ul>
             <ul class="footer-links">
