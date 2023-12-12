@@ -46,6 +46,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section3">
             <h2>留学成功案例</h2>
             <p>这里是成功案例的内容</p>
@@ -56,7 +57,7 @@
                 <Carousel :autoplay="2000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
                     <Slide v-for="slide in 10" :key="slide">
                         <div class="carousel__item">
-                            <img src="../images/study.jpg" alt="图片1">
+                            <img src="../images/study.jpg" alt="图片1" width:100px>
                         </div>
                     </Slide>
 
@@ -72,20 +73,27 @@
         </section>
 
         <Footer />
+        <Window />
+        <SuspenPopup />
     </div>
+
 </template>
 
 <script>
     import Header from './Header.vue';
     import Footer from './Footer.vue';
+    import Window from './Window.vue';
+    import SuspenPopup from './suspenPopup.vue';
     import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
     import 'vue3-carousel/dist/carousel.css'
 
     export default {
         components: {
+            SuspenPopup,
             Header,
             Footer,
+            Window,
             Carousel,
             Slide,
             Pagination,
@@ -146,12 +154,11 @@
     }
 
         .carousel__slide {
-            padding: 5px;
+            padding: 1px;
         }
 
         .carousel__viewport {
-            perspective: 2000px;
-            height: 300px;
+            perspective: 200px;
         }
 
         .carousel__track {
@@ -164,11 +171,11 @@
 
         .carousel__slide {
             opacity: 0.9;
-            transform: rotateY(-20deg) scale(0.9);
+            transform: rotateY(-10deg) scale(0.9);
         }
 
         .carousel__slide--active ~ .carousel__slide {
-            transform: rotateY(20deg) scale(0.9);
+            transform: rotateY(10deg) scale(0.9);
         }
 
         .carousel__slide--prev {
@@ -178,16 +185,30 @@
 
         .carousel__slide--next {
             opacity: 1;
-            transform: rotateY(10deg) scale(1.0);
+            transform: rotateY(10deg) scale(0.95);
         }
 
         .carousel__slide--active {
             opacity: 1;
-            transform: rotateY(0) scale(1.5);
+            transform: rotateY(0) scale(1.1);
         }
     
 
     .section5 {
-        background-color: #ccdff2;
+        background-color: #ccdff2; /* 设置第一个section的背景颜色为红色 */
     }
+    .supen-popup {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20rpx;
+		box-sizing: border-box;
+		background: white;
+		box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+		border: 1px solid #aaa;
+		font-size: 24rpx;
+		width: 100%;
+		height: 100%;
+	}
+    
 </style>
