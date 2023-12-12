@@ -48,7 +48,11 @@
         </section>
         <section class="section3">
             <h2>留学成功案例</h2>
-            <p>这里是成功案例的内容</p>
+            <img src="../images/offer/Bristol-AFM.png" alt="图片1">
+            <img src="../images/offer/Edinburgh-LLM.png" alt="图片1">
+            <img src="../images/offer/IC.png" alt="图片1">
+            <img src="../images/offer/UCL-banking.png" alt="图片1">
+            <img src="../images/offer/Sheffield-LLM.png" alt="图片1">
         </section>
 
         <section class="section4">
@@ -56,7 +60,7 @@
                 <Carousel :autoplay="2000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
                     <Slide v-for="slide in 10" :key="slide">
                         <div class="carousel__item">
-                            <img src="../images/study.jpg" alt="图片1">
+                            <img src="../images/study.jpg" alt="图片1" class="carousel__image">
                         </div>
                     </Slide>
 
@@ -76,7 +80,7 @@
 </template>
 
 <script>
-    import Header from './Header.vue';
+    import Header from './NewHeader.vue';
     import Footer from './Footer.vue';
     import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
@@ -111,7 +115,7 @@
     }
 
     .section2 {
-        background-color: #CCDFF2; /* 设置第二个section的背景颜色为绿色 */
+        background-color: white; /* 设置第二个section的背景颜色为绿色 */
     }
 
     .products {
@@ -141,17 +145,25 @@
         background-color: #e3ebf3; /* 设置第三个section的背景颜色为蓝色 */
     }
 
+        .section3 img{
+            width: 40%;
+            margin-top: 10px;
+            margin-left:10px;
+            margin-right: 10px;
+        }
+
     .section4 {
         background-color: #efefef; /* 设置第一个section的背景颜色为红色 */
     }
+
 
         .carousel__slide {
             padding: 5px;
         }
 
         .carousel__viewport {
-            perspective: 2000px;
-            height: 300px;
+            perspective: 2340px;
+            height: 176px;
         }
 
         .carousel__track {
@@ -184,6 +196,11 @@
         .carousel__slide--active {
             opacity: 1;
             transform: rotateY(0) scale(1.5);
+        }
+
+        .carousel__image {
+            width: 234px; /* 设置宽度 */
+            height: 176px; /* 设置高度 */
         }
     
 
