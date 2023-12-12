@@ -199,18 +199,18 @@
             text-decoration: none;
         }
 
-         span {
-            background-color: #F5F5F5;
-            color: #777;
-            margin-left: 5px;
-            float: right;
-        }
+    span {
+        background-color: #F5F5F5;
+        color: #777;
+        margin-left: 5px;
+        float: right;
+    }
 
 
     .item a {
         display: block;
         color: #8A8A8A;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 0rem 0.4rem 1rem;
         text-decoration: none;
     }
 
