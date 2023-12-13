@@ -50,12 +50,7 @@
 
         <section class="section3">
             <h2>留学成功案例</h2>
-            <img src="../images/offer/Bristol-AFM.png" alt="图片1">
-            <img src="../images/offer/Edinburgh-LLM.png" alt="图片1">
-            <img src="../images/offer/IC.png" alt="图片1">
-            <img src="../images/offer/UCL-banking.png" alt="图片1">
-            <img src="../images/offer/Sheffield-LLM.png" alt="图片1">
-            
+            <img src="../images/offers.png" alt="offers">
         </section>
 
         <section class="section4">
