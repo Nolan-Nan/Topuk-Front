@@ -6,7 +6,7 @@
           <p class="about-text">英国私校指南的创立，是为了给海内外的华人建立一座桥梁，让大家能更加便捷有效地为自己的孩子们找到合适的私立学校，并及时了解发生在学校内的故事。</p>
           <div class="links-container">
             <ul class="footer-links">
-              <li><a href="#">首页</a></li>
+              <li><router-link to="/">首页</router-link></li>
               <li><router-link to="/study-abroad">留学</router-link></li>
               <li><router-link to="/international-curriculum">国际课程</router-link></li>
             </ul>
