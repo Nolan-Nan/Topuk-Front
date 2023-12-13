@@ -176,7 +176,7 @@
     }
 
         .section3 img{
-            width: 40%;
+            width: 100%;
             margin-top: 10px;
             margin-left:10px;
             margin-right: 10px;
