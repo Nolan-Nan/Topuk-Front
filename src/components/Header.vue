@@ -7,7 +7,7 @@
             <ul>
                 <li><router-link to="/">首页</router-link></li>
                 <li @mouseover="showDropdown" @mouseleave="hideDropdown" class="has-dropdown">
-                    <a href="#">留学</a>
+                    <router-link to="/study-abroad">留学</router-link>
                     <div v-if="isDropdownVisible" class="dropdown">
                         <ul>
                             <li><a href="#">中小学</a></li>
@@ -16,7 +16,7 @@
                     </div>
                 </li>
                 <li @mouseover="showDropdown" @mouseleave="hideDropdown" class="has-dropdown">
-                    <a href="#">国际课程</a>
+                    <router-link to="/international-curriculum">国际课程</router-link>
                     <div v-if="isDropdownVisible" class="dropdown">
                         <ul>
                             <li><a href="#">GCSE</a></li>
@@ -25,9 +25,9 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">夏令营</a></li>
+                <li><router-link to="/summer-camp">夏令营</router-link></li>
                 <li @mouseover="showDropdown" @mouseleave="hideDropdown" class="has-dropdown">
-                    <a href="#">监护</a>
+                    <router-link to="/guardianship">监护</router-link>
                     <div v-if="isDropdownVisible" class="dropdown">
                         <ul>
                             <li><a href="#">寄宿家庭</a></li>
