@@ -70,7 +70,10 @@
 
         <section class="section5">
             <h2>夏令营 · 住宿家庭 Video</h2>
-            <p>这里是活动视频的内容</p>
+            <video controls width="1200" height="800">
+                <source src="../images/vlog.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
 
 
