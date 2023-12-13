@@ -50,7 +50,7 @@
 
         <section class="section3">
             <h2>留学成功案例</h2>
-            <img src="../images/offers.png" alt="offers">
+            <img src="../images/offers.jpg" alt="offers">
         </section>
 
         <section class="section4">
