@@ -55,18 +55,17 @@
 
         <section class="section4">
             <h2>师资一览</h2>
-                <Carousel :autoplay="5000" :itemsToShow="3.95" :wrapAround="true" :transition="500">
-                    <Slide v-for="slide in 10" :key="slide">
-                        <div class="carousel__item">
-                            <img src="../images/study.jpg" alt="图片1" class="carousel__image">
-                        </div>
-                    </Slide>
-
-                    <template #addons>
-                        <Navigation />
-                        <Pagination />
-                    </template>
-                </Carousel>
+            <Carousel :autoplay="5000" :items-to-show="3.95" :wrap-around="true" :transition="500">
+                <Slide v-for="slide in 10" :key="slide">
+                    <div class="carousel__item">
+                        <img :src="'src/images/info/Picture' + slide + '.png'" :alt="'图片' + slide" class="carousel__image">   
+                    </div>
+                </Slide>
+                <template #addons>
+                    <Navigation />
+                    <Pagination />
+                </template>
+            </Carousel>
         </section>
 
         <section class="section5">
