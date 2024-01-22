@@ -42,7 +42,17 @@
 
         <section class="section3">
             <h1>留学成功案例</h1>
-            <img src="../images/offers.jpg" alt="offers">
+            <Carousel :autoplay="5000" :items-to-show="3.95" :wrap-around="true" :transition="500">
+                <Slide v-for="slide in 11" :key="slide">
+                    <div class="carousel__item">
+                        <img :src="'src/images/offers/offer' + slide + '.png'" :alt="'图片' + slide" class="carousel__image">
+                    </div>
+                </Slide>
+                <template #addons>
+                    <Navigation />
+                    <Pagination />
+                </template>
+            </Carousel>
         </section>
 
         <section class="section4">
@@ -194,7 +204,7 @@
 
         .section3 img {
             width: 100%;
-            margin-top: 10px;
+            margin-top: 0px;
             margin-left: 10px;
             margin-right: 10px;
         }
